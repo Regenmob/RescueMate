@@ -1,0 +1,71 @@
+2025-04-02 16:54:56,587 | INFO : Task initialization completed
+2025-04-02 16:54:56,590 | INFO : loading the model from the task env.
+2025-04-02 16:54:56,609 | WARNING : For NMS iou threshold, OTX will use value from model ckpt: 0.500. If you want to change NMS iou threshold from model ckpt, then you need to re-train with new NMS iou threshold.
+2025-04-02 16:54:56,609 | INFO : Confidence threshold 0.275
+2025-04-02 16:54:56,648 | INFO : init data cfg.
+2025-04-02 16:54:56,649 | INFO : init data cfg.
+2025-04-02 16:54:56,652 | INFO : Training seed was set to 5 w/ deterministic=False.
+2025-04-02 16:54:56,652 | INFO : initialized.
+2025-04-02 16:54:56,653 | INFO : configure!: training=True
+2025-04-02 16:54:56,719 | INFO : task config!!!!: training=True
+2025-04-02 16:54:56,740 | INFO : IoU NMS Threshold will be updated from 0.5 --> 0.5
+2025-04-02 16:54:56,740 | INFO : Try to create a 100000000 size memory pool.
+2025-04-02 16:54:57,093 | INFO : train!
+2025-04-02 16:54:57,093 | INFO : cfg.gpu_ids = range(0, 1), distributed = False
+2025-04-02 16:54:57,127 | INFO : Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
+CUDA available: True
+GPU 0,1: NVIDIA RTX A6000
+CUDA_HOME: None
+GCC: x86_64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.13.1+cu117
+PyTorch compiling details: PyTorch built with:
+  - GCC 9.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.6.0 (Git Hash 52b5f107dd9cf10910aaa19cb47f3abf9b349815)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX2
+  - CUDA Runtime 11.7
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.5
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.7, CUDNN_VERSION=8.5.0, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -fabi-version=11 -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wunused-local-typedefs -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Werror=cast-function-type -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.13.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, 
+
+TorchVision: 0.14.1+cu117
+OpenCV: 4.11.0
+MMCV: 1.7.2
+MMCV Compiler: GCC 9.3
+MMCV CUDA Compiler: 11.7
+MMDetection: 2.28.1+
+------------------------------------------------------------
+
+2025-04-02 16:54:57,217 | WARNING : Init model mobilenetv2_w1, pretrained=None, models cache /home/team06/.torch/models
+2025-04-02 16:54:58,639 | INFO : Received non-NNCF checkpoint to start training -- initialization of NNCF fields will be done
+2025-04-02 16:54:58,639 | INFO : Loading NNCF checkpoint from /tmp/OTX-task-kmdjepff/env_model_ckpt.converted.pth
+2025-04-02 16:54:58,640 | INFO : Please, note that this first loading is made before addition of NNCF FakeQuantize nodes to the model, so there may be some warnings on unexpected keys
+2025-04-02 16:54:58,671 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 16:54:58,671 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 16:54:58,713 | INFO : Loaded NNCF checkpoint from /tmp/OTX-task-kmdjepff/env_model_ckpt.converted.pth
+2025-04-02 16:55:00,131 | INFO : Calculating an original model accuracy
+2025-04-02 16:55:04,418 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 16:55:04,418 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 16:55:04,896 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 16:55:04,897 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 16:55:05,317 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 16:55:05,318 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 16:55:07,375 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 16:55:07,375 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 17:01:24,496 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 17:01:24,496 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 17:01:57,189 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 17:01:57,189 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 17:01:57,834 | WARNING : Init model mobilenetv2_w1, pretrained=None, models cache /home/team06/.torch/models
+2025-04-02 17:01:58,164 | WARNING : Init model mobilenetv2_w1, pretrained=None, models cache /home/team06/.torch/models
+2025-04-02 17:01:58,755 | WARNING : Init model mobilenetv2_w1, pretrained=None, models cache /home/team06/.torch/models
+2025-04-02 17:01:59,089 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 17:01:59,090 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])

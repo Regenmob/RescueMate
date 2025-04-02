@@ -1,0 +1,13 @@
+data:
+  train:
+    ann-files: null
+    data-roots: /workspace01/team06/jjh/otx-workspace-DETECTION/splitted_dataset/train
+  val:
+    ann-files: null
+    data-roots: /workspace01/team06/jjh/otx-workspace-DETECTION/splitted_dataset/val
+  test:
+    ann-files: null
+    data-roots: null
+  unlabeled:
+    file-list: null
+    data-roots: null
