@@ -1,0 +1,85 @@
+2025-04-02 14:38:51,121 | INFO : train()
+2025-04-02 14:38:51,121 | INFO : ------> system virtual mem: svmem(total=540629041152, available=528412778496, percent=2.3, used=8691109888, free=163325407232, active=42066759680, inactive=316685426688, buffers=1094803456, cached=367517720576, shared=16179200, slab=16965750784)
+2025-04-02 14:38:51,121 | INFO : init data cfg.
+2025-04-02 14:38:51,124 | INFO : Training seed was set to 5 w/ deterministic=False.
+2025-04-02 14:38:51,124 | INFO : initialized.
+2025-04-02 14:38:51,125 | INFO : configure!: training=True
+2025-04-02 14:38:51,128 | INFO : val's samples_per_gpu: 8 --> 6
+2025-04-02 14:38:51,129 | INFO : task config!!!!: training=True
+2025-04-02 14:38:51,145 | INFO : IoU NMS Threshold will be updated from 0.5 --> 0.5
+2025-04-02 14:38:51,146 | INFO : Try to create a 100000000 size memory pool.
+2025-04-02 14:38:51,223 | INFO : train!
+2025-04-02 14:38:51,224 | INFO : cfg.gpu_ids = range(0, 1), distributed = False
+2025-04-02 14:38:51,264 | INFO : Environment info:
+------------------------------------------------------------
+sys.platform: linux
+Python: 3.10.12 (main, Feb  4 2025, 14:57:36) [GCC 11.4.0]
+CUDA available: True
+GPU 0,1: NVIDIA RTX A6000
+CUDA_HOME: None
+GCC: x86_64-linux-gnu-gcc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+PyTorch: 1.13.1+cu117
+PyTorch compiling details: PyTorch built with:
+  - GCC 9.3
+  - C++ Version: 201402
+  - Intel(R) Math Kernel Library Version 2020.0.0 Product Build 20191122 for Intel(R) 64 architecture applications
+  - Intel(R) MKL-DNN v2.6.0 (Git Hash 52b5f107dd9cf10910aaa19cb47f3abf9b349815)
+  - OpenMP 201511 (a.k.a. OpenMP 4.5)
+  - LAPACK is enabled (usually provided by MKL)
+  - NNPACK is enabled
+  - CPU capability usage: AVX2
+  - CUDA Runtime 11.7
+  - NVCC architecture flags: -gencode;arch=compute_37,code=sm_37;-gencode;arch=compute_50,code=sm_50;-gencode;arch=compute_60,code=sm_60;-gencode;arch=compute_70,code=sm_70;-gencode;arch=compute_75,code=sm_75;-gencode;arch=compute_80,code=sm_80;-gencode;arch=compute_86,code=sm_86
+  - CuDNN 8.5
+  - Magma 2.6.1
+  - Build settings: BLAS_INFO=mkl, BUILD_TYPE=Release, CUDA_VERSION=11.7, CUDNN_VERSION=8.5.0, CXX_COMPILER=/opt/rh/devtoolset-9/root/usr/bin/c++, CXX_FLAGS= -fabi-version=11 -Wno-deprecated -fvisibility-inlines-hidden -DUSE_PTHREADPOOL -fopenmp -DNDEBUG -DUSE_KINETO -DUSE_FBGEMM -DUSE_QNNPACK -DUSE_PYTORCH_QNNPACK -DUSE_XNNPACK -DSYMBOLICATE_MOBILE_DEBUG_HANDLE -DEDGE_PROFILER_USE_KINETO -O2 -fPIC -Wno-narrowing -Wall -Wextra -Werror=return-type -Werror=non-virtual-dtor -Wno-missing-field-initializers -Wno-type-limits -Wno-array-bounds -Wno-unknown-pragmas -Wunused-local-typedefs -Wno-unused-parameter -Wno-unused-function -Wno-unused-result -Wno-strict-overflow -Wno-strict-aliasing -Wno-error=deprecated-declarations -Wno-stringop-overflow -Wno-psabi -Wno-error=pedantic -Wno-error=redundant-decls -Wno-error=old-style-cast -fdiagnostics-color=always -faligned-new -Wno-unused-but-set-variable -Wno-maybe-uninitialized -fno-math-errno -fno-trapping-math -Werror=format -Werror=cast-function-type -Wno-stringop-overflow, LAPACK_INFO=mkl, PERF_WITH_AVX=1, PERF_WITH_AVX2=1, PERF_WITH_AVX512=1, TORCH_VERSION=1.13.1, USE_CUDA=ON, USE_CUDNN=ON, USE_EXCEPTION_PTR=1, USE_GFLAGS=OFF, USE_GLOG=OFF, USE_MKL=ON, USE_MKLDNN=ON, USE_MPI=OFF, USE_NCCL=ON, USE_NNPACK=ON, USE_OPENMP=ON, USE_ROCM=OFF, 
+
+TorchVision: 0.14.1+cu117
+OpenCV: 4.11.0
+MMCV: 1.7.2
+MMCV Compiler: GCC 9.3
+MMCV CUDA Compiler: 11.7
+MMDetection: 2.28.1+
+------------------------------------------------------------
+
+2025-04-02 14:38:51,286 | WARNING : Init model mobilenetv2_w1, pretrained=None, models cache /home/team06/.torch/models
+2025-04-02 14:38:51,432 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 14:38:51,432 | INFO : [] -> ['safety', 'unsafety'] ([-1, -1])
+2025-04-02 14:38:52,314 | INFO : Task Adaptation: [] => ['safety', 'unsafety']
+2025-04-02 14:38:52,314 | INFO : - Efficient Mode: False
+2025-04-02 14:38:52,314 | INFO : - Sampler type: cls_incr
+2025-04-02 14:38:52,314 | INFO : - Sampler flag: False
+2025-04-02 14:38:52,332 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 14:38:52,332 | INFO : [] -> ['safety', 'unsafety'] ([-1, -1])
+2025-04-02 14:38:52,355 | INFO : cancel hook is initialized
+2025-04-02 14:38:55,785 | INFO : Update LrUpdaterHook patience: 2 -> 2
+2025-04-02 14:38:55,786 | INFO : Update CheckpointHook interval: 1 -> 3
+2025-04-02 14:38:55,787 | INFO : Update EvalHook interval: 1 -> 3
+2025-04-02 14:38:55,787 | INFO : Update EarlyStoppingHook patience: 10 -> 4
+2025-04-02 14:38:56,710 | INFO : training progress 1%
+2025-04-02 14:38:59,812 | INFO : training progress 10%
+2025-04-02 14:39:03,356 | INFO : training progress 20%
+2025-04-02 14:39:06,709 | INFO : training progress 30%
+2025-04-02 14:39:10,986 | INFO : training progress 40%
+2025-04-02 14:39:14,162 | INFO : training progress 50%
+2025-04-02 14:39:17,242 | INFO : training progress 60%
+2025-04-02 14:39:21,559 | INFO : training progress 70%
+2025-04-02 14:39:24,840 | INFO : training progress 80%
+2025-04-02 14:39:28,206 | INFO : training progress 90%
+2025-04-02 14:39:32,629 | INFO : training progress 100%
+2025-04-02 14:39:34,121 | INFO : Training seed was set to 5 w/ deterministic=False.
+2025-04-02 14:39:34,121 | INFO : initialized.
+2025-04-02 14:39:34,122 | INFO : configure!: training=False
+2025-04-02 14:39:34,176 | INFO : test's samples_per_gpu: 8 --> 6
+2025-04-02 14:39:34,177 | INFO : task config!!!!: training=False
+2025-04-02 14:39:34,213 | INFO : IoU NMS Threshold will be updated from 0.5 --> 0.5
+2025-04-02 14:39:34,213 | INFO : Try to create a 100000000 size memory pool.
+2025-04-02 14:39:34,432 | INFO : infer!
+2025-04-02 14:39:34,448 | WARNING : Init model mobilenetv2_w1, pretrained=None, models cache /home/team06/.torch/models
+2025-04-02 14:39:34,692 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 14:39:34,692 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 14:39:36,547 | INFO : Adjusting the confidence threshold
+2025-04-02 14:39:36,609 | INFO : Setting confidence threshold to 0.25 based on results
+2025-04-02 14:39:36,610 | INFO : Final model performance: MultiScorePerformance(score: 0.7652173913043477, primary_metric: ScoreMetric(name=`f-measure`, score=`0.7652173913043477`), additional_metrics: (2 metrics), dashboard: (15 metric groups))
+2025-04-02 14:39:36,610 | INFO : called save_model
+2025-04-02 14:39:36,754 | INFO : train done.
