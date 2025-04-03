@@ -1,0 +1,17 @@
+2025-04-02 15:27:16,032 | INFO : loading the model from the task env.
+2025-04-02 15:27:16,062 | WARNING : For NMS iou threshold, OTX will use value from model ckpt: 0.500. If you want to change NMS iou threshold from model ckpt, then you need to re-train with new NMS iou threshold.
+2025-04-02 15:27:16,062 | INFO : Confidence threshold 0.25
+2025-04-02 15:27:16,101 | INFO : Exporting the model
+2025-04-02 15:27:16,105 | INFO : Training seed was set to 5 w/ deterministic=False.
+2025-04-02 15:27:16,105 | INFO : initialized.
+2025-04-02 15:27:16,106 | INFO : configure!: training=False
+2025-04-02 15:27:16,169 | INFO : task config!!!!: training=False
+2025-04-02 15:27:16,191 | INFO : IoU NMS Threshold will be updated from 0.5 --> 0.5
+2025-04-02 15:27:16,193 | INFO : Patching OpenVINO IR input shape: (992, 736)
+2025-04-02 15:27:16,193 | INFO : Export nms_iou_threshold: 0.5
+2025-04-02 15:27:16,193 | INFO : export!
+2025-04-02 15:27:16,193 | INFO : Model will be exported with precision FP32
+2025-04-02 15:27:17,332 | WARNING : Init model mobilenetv2_w1, pretrained=None, models cache /home/team06/.torch/models
+2025-04-02 15:27:17,481 | INFO : ----------------- CustomATSS.load_state_dict_pre_hook() called w/ prefix: 
+2025-04-02 15:27:17,481 | INFO : ['safety', 'unsafety'] -> ['safety', 'unsafety'] ([0, 1])
+2025-04-02 15:27:28,492 | INFO : Exporting completed
