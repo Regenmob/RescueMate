@@ -1,3 +1,32 @@
+**OTX Process**
+# Build task
+
+$ otx find --template --task DETECTION
+$ otx build Object_Detection_YOLO_X 
+--train-data-roots ./pj2_down_annotation/ 
+--val-data-roots ./pj2_down_annotation/
+
+# Train
+
+otx train
+
+# Export & Optimize
+
+$ otx export --load-weights ./outputs/latest_trained_model/models/weights.pth \
+--output ./outputs/export
+$ otx optimize --load-weights ./outputs/latest_trained_model/models/weights.pth \
+--output ./outputs/optimize/
+
+# Deploy
+
+$ otx deploy --load-weights ./outputs/export/openvino.xml \
+--output ./outputs/deploy/
+
+# test
+$ python demo.py -i 0
+
+--------------------------------------------------------------------------------------------------------
+
 # Exportable code
 
 Exportable code is a .zip archive that contains simple demo to get and visualize result of model inference.
