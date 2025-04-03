@@ -1,0 +1,51 @@
+{
+    "label_tree": {
+        "type": "tree",
+        "directed": true,
+        "nodes": [],
+        "edges": []
+    },
+    "label_groups": [
+        {
+            "_id": "67ece73bdf537b89654ee470",
+            "name": "labels",
+            "label_ids": [
+                "0",
+                "1"
+            ],
+            "relation_type": "EXCLUSIVE"
+        }
+    ],
+    "all_labels": {
+        "0": {
+            "_id": "0",
+            "name": "safety",
+            "color": {
+                "red": 58,
+                "green": 245,
+                "blue": 42,
+                "alpha": 255
+            },
+            "hotkey": "",
+            "domain": "DETECTION",
+            "creation_date": "2025-04-02T07:28:59.885000",
+            "is_empty": false,
+            "is_anomalous": false
+        },
+        "1": {
+            "_id": "1",
+            "name": "unsafety",
+            "color": {
+                "red": 141,
+                "green": 236,
+                "blue": 58,
+                "alpha": 255
+            },
+            "hotkey": "",
+            "domain": "DETECTION",
+            "creation_date": "2025-04-02T07:28:59.885000",
+            "is_empty": false,
+            "is_anomalous": false
+        }
+    }
+}
